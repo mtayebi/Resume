@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Senior Backend Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #3b82f6;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+header {
+    margin-bottom: 60px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact {
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+.contact a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #2563eb;
+}
+
+section {
+    margin-bottom: 50px;
+    animation: slideUp 0.8s ease forwards;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.job-title {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.job-date {
+    float: right;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.skills span {
+    display: inline-block;
+    background: #334155;
+    padding: 6px 12px;
+    margin: 6px 6px 0 0;
+    border-radius: 20px;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.skills span:hover {
+    background: var(--accent);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 28px; }
+    .job-date { float: none; display: block; margin-top: 5px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>Mahdi Tayebi</h1>
+    <div class="subtitle">Senior Backend Java Engineer | Enterprise Systems | FinTech</div>
+    <div class="contact">
+        📍 Iran |
+        📧 M72tayebi@email.com |
+        <a href="http://www.linkedin.com/in/mahdi-tayebi-04b616233">LinkedIn</a>
+        <a href="https://github.com/Mtayebi">GitHub</a>
+    </div>
+    <a class="download-btn" href="resume.pdf" download>Download PDF Resume</a>
+</header>
+
+<section>
+    <h2>Professional Summary</h2>
+    <div class="card">
+        Backend Java Engineer specializing in enterprise banking and high-volume transactional systems.
+        Experienced in designing secure, scalable microservices using Spring Boot,
+        implementing event-driven architectures, and optimizing performance for
+        mission-critical financial platforms.
+    </div>
+</section>
+
+<section>
+    <h2>Professional Experience</h2>
+
+    <div class="card">
+        <div class="job-title">
+            Sadad Informatics Corporation – Backend Java Developer
+            <span class="job-date">2026 – Present</span>
+        </div>
+        <ul>
+            <li>Develop enterprise-grade systems for bulk and high-volume financial transactions.</li>
+            <li>Design secure RESTful APIs using Java & Spring Boot.</li>
+            <li>Ensure transactional integrity, concurrency handling, and regulatory compliance.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="job-title">
+            City Development and Innovation Co. – Backend Developer
+            <span class="job-date">2024 – 2026</span>
+        </div>
+        <ul>
+            <li>Built backend services for high-traffic mobile banking applications.</li>
+            <li>Integrated with core banking systems and external financial services.</li>
+            <li>Improved system reliability and performance through refactoring and optimization.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <div class="job-title">
+            High Performance Data Storage (HPDS) co. – Backend Developer
+            <span class="job-date">2022 – 2024</span>
+        </div>
+        <ul>
+            <li>Built backend services for an storage application.</li>
+            <li>Integrated with linux operating systems and external services.</li>
+            <li>Improved system reliability and performance through refactoring and optimization.</li>
+        </ul>
+    </div>
+
+</section>
+
+<section>
+    <h2>Technical Expertise</h2>
+    <div class="card skills">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>Microservices</span>
+        <span>Event-Driven Architecture</span>
+        <span>Apache Kafka</span>
+        <span>RabbitMQ</span>
+        <span>PostgreSQL</span>
+        <span>Oracle</span>
+        <span>MongoDB</span>
+        <span>Docker</span>
+        <span>Jenkins</span>
+        <span>Git</span>
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <div class="card">
+        Master’s Degree – Telecommunication Engineering – 2015–2017
+    </div>
+    <div class="card">
+        Bachelor’s Degree – Electrical Engineering – 2011–2015
+    </div>
+</section
